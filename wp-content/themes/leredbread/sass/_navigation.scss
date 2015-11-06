@@ -28,7 +28,7 @@ a {
 
 .main-navigation {
 	position: relative;
-	top: 43px;
+	// right: 43px;
 	clear: both;
 	display: block;
 	float: left;
@@ -131,4 +131,172 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+
+//
+// li.current-menu-item {
+// 	border-bottom: solid thin
+// }
+
+// .main-navigation .current-menu-item:after, .main-navigation .current_page_ancestor:after, .main-navigation .current_page_item:after {
+//     content: "";
+//     background-color: #db272a;
+//     display: block;
+//     height: 3px;
+//     margin-top: -3px;
+//     width: 100%;
+// 	}
+// 	.main-navigation a {
+// 	    color: grey;
+// 	    display: block;
+// 	    font-weight: 700;
+// 	}
+// 	.main-navigation .current-menu-item>a, .main-navigation .current_page_ancestor>a, .main-navigation .current_page_item>a {
+// 	    color: #400c0d;
+// 	}
+
+
+.main-navigation {
+
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+}
+.main-navigation ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(0,0,0,.2);
+    float: left;
+    // position: absolute;
+    // top: 1.5em;
+    // left: -999em;
+    // z-index: 9999;
+}
+.main-navigation ul ul ul {
+    left: -999em;
+    top: 0;
+}
+.main-navigation ul ul li.focus>ul,
+.main-navigation ul ul li:hover>ul { left: 100% }
+.main-navigation ul ul a { width: 200px }
+.main-navigation ul li.focus>ul,
+.main-navigation ul li:hover>ul { left: auto }
+.main-navigation li {
+    float: left;
+    position: relative;
+}
+.main-navigation.toggled ul,
+.menu-toggle { display: block }
+@media screen and (min-width:37.5em) {
+    .menu-toggle { display: none }
+    .main-navigation ul { display: block }
+}
+.site-main .comment-navigation,
+.site-main .post-navigation,
+.site-main .posts-navigation {
+    margin: 0 0 1.5em;
+    overflow: hidden;
+}
+.comment-navigation .nav-previous,
+.post-navigation .nav-previous,
+.posts-navigation .nav-previous {
+    float: left;
+    width: 50%;
+}
+.comment-navigation .nav-next,
+.post-navigation .nav-next,
+.posts-navigation .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+main-navigation a,
+.site-footer a { text-decoration: none }
+.main-navigation {
+    background-color: #fff;
+    border-top: 1px solid #e1e1e1;
+    box-shadow: 0 2px 3px 0 rgba(150,150,150,.25);
+    clear: both;
+    width: auto;
+}
+body:not(.home) .main-navigation { border-bottom: 1px solid #e1e1e1 }
+.main-navigation .menu-main-navigation-container { float: left }
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.main-navigation li {
+    border-right: 1px solid #e1e1e1;
+    float: left;
+}
+.main-navigation li:first-child { border-left: 1px solid #e1e1e1 }
+.main-navigation li a { padding: .75rem 1.5rem }
+.main-navigation li:focus>a,
+.main-navigation li:hover>a { color: #400c0d }
+.main-navigation a {
+    color: grey;
+    display: block;
+    font-weight: 700;
+}
+
+
+.gallery-item,
+.wp-caption-text { text-align: center }
+.main-navigation .current-menu-item:after,
+.main-navigation .current_page_ancestor:after,
+.main-navigation .current_page_item:after {
+    content: "";
+    background-color: #db272a;
+    display: block;
+    height: 3px;
+    margin-top: -3px;
+    width: 100%;
+}
+.main-navigation a {
+    text-decoration: none;
+    color: grey;
+    display: block;
+    font-weight: 700;
+}
+.main-navigation .current-menu-item>a,
+.main-navigation .current_page_ancestor>a,
+.main-navigation .current_page_item>a { color: #400c0d }
+.screen-reader-text {
+    clip: rect(1px,1px,1px,1px);
+    position: absolute!important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+input.search-field {
+	z-index: 99999;
+	// ::after {
+	// 	content:"<i class='fa fa-search'></i>"
+//	}
+
+}
+
+form.search-form {
+	fieldset {
+		position: relative;
+		// right: 43px;
+	}
+
+}
+
+button.search-submit {
+	float: right;
+	position: relative;
+	left: 190px;
+	top: 3px;
+	border: none;
+	background-color: transparent;
+	box-shadow: none;
 }

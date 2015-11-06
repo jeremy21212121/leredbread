@@ -63,3 +63,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 @import "page-templates";
+
+body {
+	width: 1024px;
+	// border-top: solid thin grey;
+	// margin-top: 50px;
+}

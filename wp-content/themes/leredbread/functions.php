@@ -102,3 +102,20 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
+/**
+ * Customize the Product archive title
+ */
+function red_archive_title( $title ) {
+     if ( is_post_type_archive( 'product' ) ) {
+		  $title = 'Our Products Are Made Fresh Daily';
+     } elseif ( is_tax( 'product-type' ) ) {
+		  $title = sprintf( '%1$s', single_term_title( '', false ) );
+	  } elseif ( is_post_type_archive( 'testimonial' ) ) {
+		  $title = 'Testimonials';
+	  }
+
+     return $title;
+ }
+ add_filter( 'get_the_archive_title', 'red_archive_title' );
