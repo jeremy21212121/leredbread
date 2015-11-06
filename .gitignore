@@ -31,6 +31,7 @@ access_log
 /*
 !.gitignore
 !wp-content/
+!wp-config.php
 !README.md
 # Ignore everything in "wp-content" except the "plugins" and "themes" directories. #
 # ================================================================================ #

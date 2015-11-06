@@ -3,3 +3,43 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+// Header
+#lered-logo {
+  display: block;
+  width: 45%;
+}
+#masthead {
+  width: 100%;
+  margin: 2rem 0 0.5rem 2rem;
+}
+
+// Main
+
+#main {
+
+  header{
+    #lered-home-bg {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+div.lered-hero {
+  display: flex;
+  width: 100vw;
+  height: 550px;
+  background-image: url(../../images/hero-bread.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+
+  span {
+    font-size: 3rem;
+    font-family: 'Overlock Web', serif;
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
+}

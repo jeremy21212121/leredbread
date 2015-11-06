@@ -1,13 +1,13 @@
 <?php
 /**
- * The main template file.
+ * Template Name: Blog Page
  *
  * @package RED_Starter_Theme
  */
 
 get_header(); ?>
-<?php get_sidebar(); ?>
 	<div id="primary" class="content-area">
+
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -15,8 +15,8 @@ get_header(); ?>
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 
 				<header>
-					<!-- <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1> -->
-					<!-- <img id="lered-home-bg" src="<?php echo bloginfo('template_directory'); ?>/images/hero-bread.jpg" alt="Collection of fresh artisinal breads"> -->
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+
 				</header>
 			<?php endif; ?>
 
@@ -38,5 +38,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

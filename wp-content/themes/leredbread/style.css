@@ -403,6 +403,9 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+input.search-field {
+  float: right; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -420,6 +423,8 @@ a {
 
 /* Menus */
 .main-navigation {
+  position: relative;
+  top: 43px;
   clear: both;
   display: block;
   float: left;
@@ -592,6 +597,10 @@ a {
 .bypostauthor {
   display: block; }
 
+h2.entry-title a {
+  text-decoration: none;
+  color: #DB272A; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -656,3 +665,35 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+#lered-logo {
+  display: block;
+  width: 45%; }
+
+#masthead {
+  width: 100%;
+  margin: 2rem 0 0.5rem 2rem; }
+
+#main header #lered-home-bg {
+  display: block;
+  width: 100%; }
+
+div.lered-hero {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 550px;
+  background-image: url(../../images/hero-bread.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  div.lered-hero span {
+    font-size: 3rem;
+    font-family: 'Overlock Web', serif;
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: white; }
