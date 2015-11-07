@@ -752,7 +752,18 @@ h2.entry-title a {
 #latest {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-left: 0;
+  padding-left: 0; }
+
+ul.product-type {
+  margin-left: 0;
+  padding-left: 0; }
+
+li.product {
+  width: 24%;
+  height: 437px;
+  display: inline-block; }
 
 li.latest {
   background-color: #fff;
@@ -761,6 +772,9 @@ li.latest {
       -ms-flex: 1 0 25%;
           flex: 1 0 25%;
   max-width: 25%; }
+
+ul {
+  list-style-type: none; }
 
 /*--------------------------------------------------------------
 # Media
